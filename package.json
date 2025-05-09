@@ -1,0 +1,14 @@
+{
+  "name": "toggle-bt",
+  "version": "1.0.0",
+  "description": "a super toggle for control elements",
+  "main": "toggle.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "toggle-bt"
+  ],
+  "author": "https://github.com/ali478qwe",
+  "license": "MIT"
+}
