@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>toggle</title>
+    <style>
+        body{
+               background-color: rgb(0, 0, 0);
+               justify-content: center;
+               align-items: center;
+               display: flex;
+        }
+        
+     #item-bg{
+        position: relative;
+        background-color: rgb(39, 0, 214) ;
+        height: 200px;
+        width: 200px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        top:100px;
+        
+        }
+        #button-box{
+        background-color: white ;
+        height: 80px;
+        width: 180px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        
+        
+
+        }
+        .button{
+        background-color: rgb(0, 0, 0) ;
+        height: 60px;
+        width: 80px;
+        border-radius: 10px;  
+        transition: transform 0.1s ease-in-out;
+        margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="item-bg" >
+        <h1>Button</h1>
+       <div id="button-box">
+        <div class="button"></div>
+       </div>
+      </div>
+    
+<script type="module">
+     import {toggle} from '../toggle.js';
+
+    const button_tag = document.querySelector('.button');
+
+    function button() {
+
+    button_tag.style.backgroundColor = this.isOn ? "blue" : "" ;
+
+    button_tag.style.transform = this.isOn ? "translateX(100%)" : "translateX(0%)";
+
+    //reload();
+
+   }
+    const button_func  = new toggle(false,button,button_tag);
+    button_func.click();
+</script>
+</body>
+
+</html>
