@@ -25,3 +25,5 @@
 function button(id,func){
       document.getElementById(id).addEventListener("click",func);
 }
+
+export {toggle,button};
