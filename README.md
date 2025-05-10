@@ -17,3 +17,8 @@ obj.click();
 </script>
 
 ```
+## for update and set new state 
+```
+obj.reload(false or true);
+//for set a new state and
+```
