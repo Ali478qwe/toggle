@@ -20,5 +20,5 @@ obj.click();
 ## for update and set new state 
 ```
 obj.reload(false or true);
-//for set a new state and
+//for set a new state or refresh toggle
 ```
