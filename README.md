@@ -24,7 +24,6 @@ const obj  = new toggle(false,item_func,item_tag);
 obj.click();
 
 </script>
-
 ```
 ## for update and set new state 
 ```
