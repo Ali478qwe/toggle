@@ -2,6 +2,11 @@
 ```
 npm i toggle-bt
 ```
+## To import as a node module with vite
+```
+import {toggle} from 'toggle-bt';
+```
+
 ## How use?
 
 ```
@@ -26,7 +31,3 @@ obj.click();
 obj.reload(false or true);
 //for set a new state or refresh toggle
 ```
-
-## To import as a node module with vite
-```
-import {toggle} from 'toggle-bt';
