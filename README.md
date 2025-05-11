@@ -12,7 +12,7 @@ import {toggle} from 'toggle-bt';
 ```
 <script type="module">
 
-import toggle from "toggle_save_location"
+import {toggle} from "toggle_save_location"
 
 const item_tag = document.getElementById("id");
 
